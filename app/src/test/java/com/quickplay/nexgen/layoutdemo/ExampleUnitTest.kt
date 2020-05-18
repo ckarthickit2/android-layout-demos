@@ -1,4 +1,4 @@
-package com.quickplay.nexgen.constraintlayoutdemo
+package com.quickplay.nexgen.layoutdemo
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package com.quickplay.nexgen.constraintlayoutdemo
+package com.quickplay.nexgen.layoutdemo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
