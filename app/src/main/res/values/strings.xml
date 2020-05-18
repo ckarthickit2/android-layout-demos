@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ConstraintLayoutDemo</string>
+    <string name="header_image">Header Image</string>
+    <string name="beauty_and_the_beast">Beauty and the Beast</string>
+    <string name="bookmark_movie">Bookmark Movie</string>
+    <string name="rent_rs_29">RENT Rs.29</string>
+    <string name="buy_rs_129">BUY Rs.129</string>
+    <string name="similar">Similar</string>
+    <string name="ratings">Ratings</string>
+    <string name="family">Family</string>
+    <string name="rating_percent">71%</string>
+    <string name="template_movie_description">The story and characters you know and love come to spectacular life in the live-action adaption of Disney\'s animated classic Beauty and the Beast.</string>
+</resources>
