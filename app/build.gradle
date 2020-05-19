@@ -7,13 +7,16 @@ android {
     buildToolsVersion "29.0.3"
 
     defaultConfig {
-        applicationId "com.quickplay.nexgen.constraintlayoutdemo"
+        applicationId "com.kartdroid.layoutdemo"
         minSdkVersion 19
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
         vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    viewBinding{
+        enabled = true
     }
 
     buildTypes {

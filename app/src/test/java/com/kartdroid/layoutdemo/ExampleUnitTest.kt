@@ -1,4 +1,4 @@
-package com.quickplay.nexgen.layoutdemo
+package com.kartdroid.layoutdemo
 
 import org.junit.Test
 

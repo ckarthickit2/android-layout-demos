@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.quickplay.nexgen.layoutdemo">
+    package="com.kartdroid.layoutdemo">
 
     <application
         android:allowBackup="true"
@@ -9,12 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.quickplay.nexgen.layoutdemo.MainActivity">
+        <activity android:name="com.kartdroid.layoutdemo.home.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name="com.kartdroid.layoutdemo.cl.ConstraintDemoActivity">
         </activity>
     </application>
 

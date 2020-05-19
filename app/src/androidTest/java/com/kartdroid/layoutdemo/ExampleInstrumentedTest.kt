@@ -1,4 +1,4 @@
-package com.quickplay.nexgen.layoutdemo
+package com.kartdroid.layoutdemo
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/demo_item_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_gravity="center"
+    android:paddingTop="8dp">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:focusable="false"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        app:layout_constraintEnd_toStartOf="@+id/di_vbarrier_right_icon"
+        app:layout_constraintStart_toStartOf="@id/demo_item_root"
+        app:layout_constraintTop_toTopOf="@id/demo_item_root"
+        tools:text="Title Goes Here" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@null"
+        android:focusable="false"
+        android:tint="?attr/textColorAlertDialogListItem"
+        app:layout_constraintBottom_toBottomOf="@+id/title_text"
+        app:layout_constraintEnd_toEndOf="@id/demo_item_root"
+        app:layout_constraintTop_toTopOf="@+id/title_text"
+        app:srcCompat="@drawable/ic_chevron_right"
+        tools:srcCompat="@drawable/ic_chevron_right"
+        tools:tint="@color/button_blue" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/di_vbarrier_right_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        app:constraint_referenced_ids="imageView"
+        tools:layout_editor_absoluteX="371dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/di_hbarrier_divider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="imageView,title_text"
+        tools:layout_editor_absoluteY="731dp" />
+
+    <View
+        android:id="@+id/demo_item_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"
+        android:paddingTop="8dp"
+        app:layout_constraintLeft_toLeftOf="@id/demo_item_root"
+        app:layout_constraintTop_toBottomOf="@+id/di_hbarrier_divider" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
